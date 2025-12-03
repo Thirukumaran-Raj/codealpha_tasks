@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stunning Image Gallery</h1>
+        <p>Explore beautiful images from around the world. Hover for effects, click to view in lightbox.</p>
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="animals">Animals</button>
+            <button class="filter-btn" data-category="cities">Cities</button>
+            <button class="filter-btn" data-category="abstract">Abstract</button>
+        </div>
+    </header>
+    
+    <main>
+        <div class="gallery" id="gallery">
+        </div>
+    </main>
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev" id="prev-btn">&#10094;</a>
+        <a class="next" id="next-btn">&#10095;</a>
+        <div class="caption" id="caption"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
